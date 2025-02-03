@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Location of elements to move around the page -->
+    <header class="header__container">
+        <nav class="nav__container">
+            <h2 class="nav__title">E-COMMERCE</h2>
+            <!-- menu icon -->
+            <i class='bx bx-menu-alt-left menu-icon'></i>
+            <ul class="nav__list" id="menu">
+                <li class="nav__item">
+                    <a class="nav__link" href="#home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#product">Product</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#contact">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                </li>
+            </ul>
+        </nav>
+        <!--shopping cart-->
+        <div class="cart">
+            <h2 class="cart__title">Your cart</h2>
+            <!--container of the js-->
+            <div class="card__content">
+            </div>
+            <div class="cart__total">
+                <div class="cart__total-title">Total</div>
+                <div class="cart__total-price">$0</div>
+            </div>
+            <button type="button" class="cart__btn">Buy Now</button>
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+
+        <!--section of the header-->
+        <section class="header__container" id="home">
+            <img class="header__img" src="./img/headerImg.png" alt="">
+            <div class="header__info">
+                <h1 class="header__title">Technological products</h1>
+                <p class="header__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                    adipisci unde. Eaque quod ipsum harum nisi asperiores totam animi placeat, inventore magni
+                    obcaecati? Doloribus, aperiam in quis distinctio accusamus beatae?
+                    Quia neque ad est mollitia, exercitationem dignissimos culpa ex placeat alias eveniet excepturi illo
+                    sunt sequi, beatae reprehenderit repudiandae sapiente! Totam veritatis consequuntur minima
+                    aspernatur omnis quas? Ratione, laborum unde.</p>
+                <div class="header__button">
+                    <button class="header__btn1">
+                        <p class="header-p">Text me</p>
+                        <i class='bx bxl-whatsapp btn__i'></i>
+                    </button>
+                    <button class="header__btn1 header-btn">
+                        <p class="header-p">See more</p>
+                        <i class='bx bx-message-rounded-dots btn__i'></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- product brands in slider -->
+        <section class="slider">
+            <div class="slider-track">
+                <div class="slide">
+                    <img src="./img/logo1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo6.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo7.png" alt="">
+                </div>
+    
+            </section>
+            <!-- products -->
+        <section class="shop container" id="product">
+        <h2 class="section-title">Shop Product</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="https://cdn.unotv.com/images/2023/09/smartphones-plegables-2023-131132-1024x576.jpg"
+                    class="product-img">
+                <h2 class="product-title">Nokia 6.1 Plus </h2>
+                <div>
+                  <span class="price-title">Price:</span>
+                <spam class="price">$40</spam>  
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://www.lg.com/es/lg-experience/images/lg-lab/2023/what-is-a-smart-tv/lg-experience-lg-lab-what-is-a-smart-tv-key-visual.jpg"
+                    alt="" class="product-img">
+                <h2 class="product-title">Sony PFM-42X1</h2>
+                <div>
+                    <span class="price-title">Price:</span>
+                <spam class="price">$50</spam>
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://media.gq.com.mx/photos/61e70ca25def32c5619cef06/4:3/w_712,h_534,c_limit/Lenovo%20Yoga%20Slim%207%20Pro.jpg"
+                    class="product-img">
+                <h2 class="product-title">Lenovo Flex 5</h2>
+                <div>
+                    <span class="price-title">Price:</span>
+                <spam class="price">$60</spam>
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://img.freepik.com/foto-gratis/escena-relacionada-musica-3d_23-2151124846.jpg"
+                    alt="" class="product-img">
+                <h2 class="product-title">JBL Flip 6</h2>
+                <div>
+                    <span class="price-title">Price:</span>
+                <spam class="price">$30</spam>
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://img.freepik.com/foto-gratis/escena-relacionada-musica-3d_23-2151125082.jpg"
+                    alt="" class="product-img">
+                <h2 class="product-title">Sony SRS-XG500</h2>
+                <div>
+                   <span class="price-title">Price:</span>
+                <spam class="price">$30</spam> 
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://i.pcmag.com/imagery/reviews/05yYqQdz2a8pDHNB19JFCvk-1..v1711546100.jpg"
+                    alt="" class="product-img">
+                <h2 class="product-title">LG 42PN4500</h2>
+                <div>
+                   <span class="price-title">Price:</span>
+                <spam class="price">$40</spam> 
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://www.notebookcheck.nl/fileadmin/Notebooks/News/_nc3/Screenshot_2023_06_14_at_10.27.24.png"
+                    alt="" class="product-img">
+                <h2 class="product-title">HP Envy 13, 15</h2>
+                <div>
+                   <span class="price-title">Price:</span>
+                <spam class="price">$60</spam> 
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://www.androidauthority.com/wp-content/uploads/2021/07/2021-Best-Smartphone-Cameras.jpg"
+                    alt="" class="product-img">
+                <h2 class="product-title">Galaxy A21s</h2>
+                <div>
+                    <span class="price-title">Price:</span>
+                <spam class="price">$20</spam>
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates consequuntur magnam maxime odit, nemo</p>
+                <button class="btn-cart">
+                    <h3 class="add-cart">Add to cart</h3>
+                    <i class='bx bx-cart-add'></i>
+                </button>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer id="contact">
+        <section class="footer__container">
+            <div>
+                <h2 class="footer__info">Joel Játiva</h2>
+                <p class="footer__info">Full-Stack Developer</p>
+            </div>
+            <div class="footer__container__img">
+                <img class="footer__img" src="https://st2.depositphotos.com/5142301/7551/v/450/depositphotos_75512255-stock-illustration-abstract-sphere-logo.jpg" alt="">
+                <p class="footer__location">Ecuador / Esmeraldas</p>
+            </div>
+            <div class="footer__logo">
+                <a href="https://www.linkedin.com/in/joel-jativa-8554a4298/">
+                    <i class='bx bxl-linkedin-square logoInfo'></i>
+                </a>
+
+                <a href="https://github.com/JoelDavidJM">
+                    <i class='bx bxl-github logoInfo' ></i>
+                </a>
+
+                <a href="">
+                    <i class='bx bxl-tiktok logoInfo'></i>
+                </a>
+
+            </div>
+        </section>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./nav.js"></script>
+</body>
+
+</html>
